@@ -21,7 +21,7 @@ function PostProvider ({ children }) {
   const searchedPosts = searchQuery.length > 0 
   ? posts.filter(post =>  `${post.title} ${post.body}`.toLowerCase().includes(searchQuery.toLowerCase()))
   : posts
-  console.log(searchedPosts)
+  //console.log(searchedPosts)
   function handleAddPost (post) {
     setPosts(posts => [post, ...posts])
   }
